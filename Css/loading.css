@@ -1,0 +1,36 @@
+#loadingWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+.loadingNode {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 10px;
+    background-color: #F0F0F0;
+}
+
+#node1 {
+    animation: nodeAnimate 2s ease-in-out infinite;
+}
+
+#node2 {
+    animation: nodeAnimate 2s ease-in-out -0.66s infinite;
+}
+
+#node3 {
+    animation: nodeAnimate 2s ease-in-out -1.33s infinite;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes nodeAnimate {
+    0% {background-color: var(--secondary);}
+    50% {background-color: var(--primary);}
+    100% {background-color: var(--secondary);}
+}

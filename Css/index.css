@@ -1,0 +1,38 @@
+#logo {
+    background-image: var(--logoType);
+    height: 2.5rem;
+    width: 12.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 5rem;
+}
+
+#title {
+    margin-bottom: 1rem;
+}
+
+#blueText {
+    color: var(--blue);
+}
+
+.description {
+    width: 80vw;
+    max-width: 60rem;
+    margin-bottom: 3.5rem;
+}
+
+#initiateBtn {
+    width: 11.5rem;
+    height: 2.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnText {
+    font-size: 1.2rem;
+    color: var(--primary);
+    cursor: pointer;
+}

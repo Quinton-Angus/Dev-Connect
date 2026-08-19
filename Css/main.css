@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    color: var(--primary);
+}
+
+.mainContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*/ Font Weights & styling /*/
+
+.semiBold {
+    font-weight: 600;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.italic {
+    font-style: italic;
+}
+
+@media (min-width: 250px) {
+    * {
+        font-size: 8px;
+    }
+
+    .mainContainer {
+        margin-top: 10dvh;
+    }
+
+}
+
+@media (min-width: 1100px) {
+    * {
+        font-size: 10px;
+    }
+
+    .mainContainer {
+        margin-top: 25dvh;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    * {
+        --background: #080808;
+        --primary: #ffffff;
+        --blue: #005CC4;
+        --logoType: url('../Assets/Dev_Connect_Logo_White.svg');
+        --secondary: #0B0B0B;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    * {
+        --background: #ffffff;
+        --primary: #000000;
+        --blue: #005CC4;
+        --logoType: url('../Assets/Dev_Connect_Logo_Black.svg');
+        --secondary: #F0F0F0;
+    }
+}
+
+/*/ Font sizing /*/
+
+.title {
+    font-size: 2.5rem;
+}
+
+.text {
+    font-size: 1.2rem;
+}
