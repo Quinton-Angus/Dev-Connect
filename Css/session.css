@@ -1,0 +1,36 @@
+#title {
+    margin-bottom: 1rem;
+}
+
+.description {
+    width: 80vw;
+    max-width: 60rem;
+    margin-bottom: 5rem;
+}
+
+#codeInput {
+    width: 15rem;
+    border: none;
+    border-bottom: 1px solid var(--primary);
+    background: none;
+    height: 3rem;
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    letter-spacing: 5px;
+}
+
+#codeInput:focus {
+    border: none;
+    border-bottom: 2px solid var(--primary);
+    outline: none;
+    color: var(--primary);
+}
+
+#logo {
+    background-image: var(--logoType);
+    height: 2.5rem;
+    width: 12.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 5rem;
+}
