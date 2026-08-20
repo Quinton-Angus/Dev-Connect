@@ -18,7 +18,7 @@ async function verifyCode(code) {
     const verifyData = await verify.json()
 
     if (verifyData.error) {
-        return console.log(error)
+        return console.log(verifyData.error)
     } else {
         window.location.href = '../index.html'
     }
